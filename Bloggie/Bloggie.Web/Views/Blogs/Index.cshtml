@@ -1,0 +1,20 @@
+﻿@model Bloggie.Web.Models.Domain.BlogPost
+@{
+}
+
+<div class="container my-5">
+	<div class="row justify-content-center">
+		<div class="col-12 col-lg-6">
+
+			@if(Model != null)
+			{
+				<h1 class="mb-3">@Model.Heading</h1>
+			}
+			else
+			{
+				<p>Blog Post Not found</p>
+			}
+
+		</div>
+	</div>
+</div>
